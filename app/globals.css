@@ -1,0 +1,47 @@
+/* ===== ESTILO GLOBAL ARO COLOMBIA ===== */
+html, body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg, #000 0%, #111 100%);
+  font-family: "Franklin Gothic Medium", Arial, sans-serif;
+  color: #fff;
+}
+
+/* Enlaces del menú */
+a {
+  color: #60a5fa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #93c5fd; /* tono más claro */
+}
+
+/* Títulos */
+h1, h2, h3 {
+  color: #60a5fa;
+  font-weight: bold;
+}
+
+/* Tarjetas o secciones */
+.section-card {
+  background-color: #111;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  margin: 2rem auto;
+  max-width: 800px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(96, 165, 250, 0.3);
+}
+
+/* Texto */
+p {
+  line-height: 1.6;
+  color: #ccc;
+}
