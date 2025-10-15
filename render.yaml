@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: arocolombia
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm run start -p ${PORT:-3000}
+    autoDeploy: true
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /
+
