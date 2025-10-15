@@ -112,10 +112,10 @@ export default function Header() {
   );
 }
 
-// 🔹 Ítems del menú
+// 🔹 Ítems del menú (rutas corregidas para coincidir con tus carpetas)
 const menuItems = [
   {
-    href: '/planes-emergencia',
+    href: '/planes-de-emergencia',
     label: 'Planes de emergencia',
     icon: <Flame size={18} />,
   },
@@ -135,12 +135,12 @@ const menuItems = [
     icon: <Users size={18} />,
   },
   {
-    href: '/matrices-riesgos',
+    href: '/matrices-de-riesgos-y-peligros',
     label: 'Matrices de riesgos y peligros',
     icon: <AlertTriangle size={18} />,
   },
   {
-    href: '/diagnostico-empresa',
+    href: '/diagnostico-para-tu-empresa',
     label: 'Diagnóstico para tu empresa',
     icon: <ClipboardCheck size={18} />,
   },
@@ -161,4 +161,3 @@ const menuButton = {
   boxShadow: '0 4px 10px rgba(0,0,0,0.4)',
   background: 'transparent',
 };
-
