@@ -42,7 +42,6 @@ export default function PlanesDeEmergencia() {
           textAlign: "center",
         }}
       >
-        {/* Título principal */}
         <h1
           style={{
             fontSize: "2.8rem",
@@ -56,7 +55,6 @@ export default function PlanesDeEmergencia() {
           Planes de Emergencia
         </h1>
 
-        {/* Introducción */}
         <p
           style={{
             fontSize: "1.2rem",
@@ -71,23 +69,8 @@ export default function PlanesDeEmergencia() {
           de las personas, las instalaciones o el entorno.
         </p>
 
-        {/* Importancia */}
-        <h2
-          style={{
-            color: "#6FB7E7",
-            fontSize: "1.8rem",
-            marginBottom: "1rem",
-          }}
-        >
-          Importancia de Implementarlos
-        </h2>
-        <p
-          style={{
-            color: "#ccc",
-            fontSize: "1.1rem",
-            marginBottom: "1.5rem",
-          }}
-        >
+        <h2 style={subtitleStyle}>Importancia de Implementarlos</h2>
+        <p style={{ color: "#ccc", fontSize: "1.1rem", marginBottom: "1.5rem" }}>
           Contar con un plan de emergencia garantiza una respuesta adecuada ante
           incendios, terremotos, fugas químicas, inundaciones o cualquier evento
           que ponga en riesgo la vida o el patrimonio. Estos planes reducen los
@@ -95,34 +78,14 @@ export default function PlanesDeEmergencia() {
           prevención.
         </p>
 
-        {/* Leyes y normativas */}
-        <h2
-          style={{
-            color: "#6FB7E7",
-            fontSize: "1.8rem",
-            marginBottom: "1rem",
-          }}
-        >
-          Leyes y Normativas Aplicables
-        </h2>
-        <ul
-          style={{
-            listStyle: "none",
-            padding: 0,
-            color: "#D1D5DB",
-            fontSize: "1.1rem",
-            textAlign: "left",
-            margin: "0 auto 2rem",
-            maxWidth: "700px",
-          }}
-        >
-          <li>⚖️ <strong>Decreto 1072 de 2015</strong> – Establece el Sistema de Gestión de la Seguridad y Salud en el Trabajo (SG-SST).</li>
-          <li>📘 <strong>Resolución 0312 de 2019</strong> – Define los estándares mínimos del SG-SST, incluyendo los planes de emergencia.</li>
-          <li>🏢 <strong>Decreto 1443 de 2014</strong> – Reglamenta la implementación del SG-SST en las empresas.</li>
-          <li>🚨 <strong>Norma Técnica Colombiana NTC 1700</strong> – Guía para elaborar e implementar planes de emergencia en instituciones.</li>
+        <h2 style={subtitleStyle}>Leyes y Normativas Aplicables</h2>
+        <ul style={{ listStyle: "none", padding: 0, color: "#D1D5DB", fontSize: "1.1rem", textAlign: "left", margin: "0 auto 2rem", maxWidth: "700px" }}>
+          <li>⚖️ <strong>Decreto 1072 de 2015</strong> – SG-SST.</li>
+          <li>📘 <strong>Resolución 0312 de 2019</strong> – Estándares mínimos del SG-SST.</li>
+          <li>🏢 <strong>Decreto 1443 de 2014</strong> – Implementación del SG-SST.</li>
+          <li>🚨 <strong>NTC 1700</strong> – Guía para planes de emergencia.</li>
         </ul>
 
-        {/* Botón de regreso */}
         <Link href="/">
           <button style={buttonStyle}>🏠 Regresar al inicio</button>
         </Link>
@@ -130,6 +93,12 @@ export default function PlanesDeEmergencia() {
     </main>
   );
 }
+
+const subtitleStyle = {
+  color: "#6FB7E7",
+  fontSize: "1.8rem",
+  marginBottom: "1rem",
+};
 
 const buttonStyle = {
   background: "linear-gradient(to bottom, #6FB7E7, #2F6CA6, #0F3558)",
