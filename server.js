@@ -12,6 +12,6 @@ app.prepare().then(() => {
     handle(req, res);
   }).listen(port, (err) => {
     if (err) throw err;
-    console.log(`🚀 Servidor corriendo en puerto ${port}`);
+    console.log(`🚀 Servidor Next.js ejecutándose en el puerto ${port}`);
   });
 });
