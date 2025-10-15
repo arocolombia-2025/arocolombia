@@ -1,11 +1,13 @@
 services:
   - type: web
-    name: arocolombia
+    name: aro-colombia
     env: node
+    region: oregon
+    branch: main
     buildCommand: npm install && npm run build
-    startCommand: npm run start -p ${PORT:-3000}
+    startCommand: node .next/standalone/server.js
     autoDeploy: true
-    routes:
-      - type: rewrite
-        source: /*
-        destination: /
+    plan: free
+    envVars:
+      - key: PORT
+        value: 10000
